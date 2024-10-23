@@ -1,0 +1,20 @@
+import pandas as pd
+
+def save_to_csv(data):
+    """Save weather updates to a CSV file."""
+    df = pd.DataFrame(data)
+    df.to_csv('data/daily_weather_summary.csv', index=False)
+
+# Update the main function to save data at the end of each loop
+def main():
+    weather_updates = []
+    while True:
+        for city in CITIES:
+            data = fetch_weather_data(city)
+            if data:
+                processed_data = process_weather_data(data)
+                weather_updates.append(processed_data)
+                print(processed_data)  # Print processed data
+        save_to_csv(weather_updates)  # Save updates to CSV
+        weather_updates = []  # Clear updates for the next iteration
+        time.sleep(300)  

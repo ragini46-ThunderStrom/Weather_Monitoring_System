@@ -1,0 +1,20 @@
+2024-10-23 18:09:45,555 - INFO - Starting weather monitoring.
+2024-10-23 18:09:45,843 - INFO - Processed data: {'main_weather': 'Mist', 'current_temp': 30.05000000000001, 'feels_like': 29.99000000000001, 'timestamp': 1729686796, 'city': 'Delhi'}
+2024-10-23 18:09:46,019 - INFO - Processed data: {'main_weather': 'Haze', 'current_temp': 31.99000000000001, 'feels_like': 37.670000000000016, 'timestamp': 1729686587, 'city': 'Mumbai'}
+2024-10-23 18:09:46,189 - INFO - Processed data: {'main_weather': 'Mist', 'current_temp': 30.08000000000004, 'feels_like': 37.08000000000004, 'timestamp': 1729687076, 'city': 'Chennai'}
+2024-10-23 18:09:46,418 - INFO - Processed data: {'main_weather': 'Rain', 'current_temp': 23.05000000000001, 'feels_like': 23.55000000000001, 'timestamp': 1729686598, 'city': 'Bangalore'}
+2024-10-23 18:09:46,607 - INFO - Processed data: {'main_weather': 'Haze', 'current_temp': 25.970000000000027, 'feels_like': 25.970000000000027, 'timestamp': 1729686605, 'city': 'Kolkata'}
+2024-10-23 18:09:46,802 - INFO - Processed data: {'main_weather': 'Clouds', 'current_temp': 24.189999999999998, 'feels_like': 24.439999999999998, 'timestamp': 1729686827, 'city': 'Hyderabad'}
+2024-10-23 18:09:46,802 - INFO - Daily Summary: {datetime.date(2024, 10, 23): {'max_temp': 31.99000000000001, 'min_temp': 23.05000000000001, 'total_temp': 165.3300000000001, 'count': 6, 'conditions': ['Mist', 'Haze', 'Mist', 'Rain', 'Haze', 'Clouds'], 'avg_temp': 27.555000000000017, 'dominant_condition': 'Haze'}}
+2024-10-23 18:09:47,119 - INFO - Weather updates saved to weather_updates.csv
+2024-10-23 18:11:03,696 - INFO - Monitoring stopped by user.
+2024-10-23 18:13:59,945 - INFO - Starting weather monitoring.
+2024-10-23 18:14:00,150 - INFO - Processed data: {'main_weather': 'Haze', 'current_temp': 29.05000000000001, 'feels_like': 29.49000000000001, 'timestamp': 1729687331, 'city': 'Delhi'}
+2024-10-23 18:14:00,428 - INFO - Processed data: {'main_weather': 'Haze', 'current_temp': 31.99000000000001, 'feels_like': 37.670000000000016, 'timestamp': 1729687345, 'city': 'Mumbai'}
+2024-10-23 18:14:00,604 - INFO - Processed data: {'main_weather': 'Mist', 'current_temp': 30.08000000000004, 'feels_like': 37.08000000000004, 'timestamp': 1729687076, 'city': 'Chennai'}
+2024-10-23 18:14:00,791 - INFO - Processed data: {'main_weather': 'Rain', 'current_temp': 21.890000000000043, 'feels_like': 22.410000000000025, 'timestamp': 1729687051, 'city': 'Bangalore'}
+2024-10-23 18:14:00,986 - INFO - Processed data: {'main_weather': 'Haze', 'current_temp': 25.970000000000027, 'feels_like': 25.970000000000027, 'timestamp': 1729687299, 'city': 'Kolkata'}
+2024-10-23 18:14:01,159 - INFO - Processed data: {'main_weather': 'Clouds', 'current_temp': 24.189999999999998, 'feels_like': 24.439999999999998, 'timestamp': 1729686827, 'city': 'Hyderabad'}
+2024-10-23 18:14:01,160 - INFO - Daily Summary: {datetime.date(2024, 10, 23): {'max_temp': 31.99000000000001, 'min_temp': 21.890000000000043, 'total_temp': 163.17000000000013, 'count': 6, 'conditions': ['Haze', 'Haze', 'Mist', 'Rain', 'Haze', 'Clouds'], 'avg_temp': 27.19500000000002, 'dominant_condition': 'Haze'}}
+2024-10-23 18:14:01,476 - INFO - Weather updates saved to weather_updates.csv
+2024-10-23 18:14:22,581 - INFO - Monitoring stopped by user.
