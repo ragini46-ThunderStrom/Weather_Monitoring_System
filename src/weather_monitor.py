@@ -6,22 +6,19 @@ import logging
 import argparse
 from datetime import datetime
 import matplotlib
-matplotlib.use('Agg')
+matplotlib.use('Agg')  # Ensure it's used in a non-interactive environment
 import matplotlib.pyplot as plt
 import pandas as pd
 
-# Set up command-line argument parsing
-parser = argparse.ArgumentParser(description='Weather Monitoring Script')
-parser.add_argument('--threshold', type=float, default=35.0, help='Temperature threshold for alerts')
-args = parser.parse_args()
+# Logging configuration
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 API_KEY = '6b155d0a0416cba8293e1343da2f58ac'  # Replace with your actual OpenWeatherMap API key
 CITIES = ['Delhi', 'Mumbai', 'Chennai', 'Bangalore', 'Kolkata', 'Hyderabad']
 URL = "http://api.openweathermap.org/data/2.5/weather"
 
-# Logging configuration
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-THRESHOLD_TEMP = args.threshold
+# Default threshold (used for tests)
+THRESHOLD_TEMP = 35.0
 
 def fetch_weather_data(city):
     """Fetch weather data from OpenWeatherMap API."""
@@ -144,4 +141,10 @@ def main():
         logging.info("Monitoring stopped by user.")
 
 if __name__ == "__main__":
+    # Set up command-line argument parsing
+    parser = argparse.ArgumentParser(description='Weather Monitoring Script')
+    parser.add_argument('--threshold', type=float, default=35.0, help='Temperature threshold for alerts')
+    args = parser.parse_args()
+    THRESHOLD_TEMP = args.threshold
+
     main()
