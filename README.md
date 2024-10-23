@@ -3,18 +3,6 @@
 ## Overview
 The Weather Monitoring System retrieves and processes real-time weather data for major cities in India. It provides daily summaries, alerts for significant temperature changes, and visualizations to help users understand weather trends.
 
-## Table of Contents
-1. [Features](#features)
-2. [Technologies Used](#technologies-used)
-3. [Setup Instructions](#setup-instructions)
-4. [Usage](#usage)
-5. [Data Processing](#data-processing)
-6. [Alert System](#alert-system)
-7. [Visualization](#visualization)
-8. [Data Storage](#data-storage)
-9. [Testing](#testing)
-10. [Future Enhancements](#future-enhancements)
-
 ## Features
 - Fetches real-time weather data from OpenWeatherMap API.
 - Processes weather data for multiple cities.
