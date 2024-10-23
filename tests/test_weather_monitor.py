@@ -1,5 +1,5 @@
 import unittest
-from datetime import datetime  # Import the datetime module
+from datetime import datetime
 from src.weather_monitor import kelvin_to_celsius, calculate_daily_summary
 
 class TestWeatherMonitor(unittest.TestCase):
